@@ -1,0 +1,100 @@
+===
+color:
+  colorScheme: [ "#82B9A0","#82B9A0","#D8A69F"] 
+===
+<!--
+AK: Alexander Kremling
+FN: Frederike Neuber
+BC: Basti Cacean
+EP: Eugen Pissarskoi
+-->
+
+<!-- General Comments
+
+-->
+[C - Permission of CAM]: Physicians should be allowed to offer, recommend and use (CAM) treatments of type X in the therapeutic context Y.
+<!--
+Remarks to the formulation:
++ `X` is a placeholder that can be substituted with specific treatment types such as homeopathy, quantum healing, neural therapy, herbal medicine /phytotherapy, traditional Chinese medicine. 
+   + Advantage: We avoid to need a sharper definition of CAM and can us none or a fuzzy one (as advocated by schone-seifert_komplementar-_2015).
++ The '(CAM)' is used to indicate the context. 
++ `Y` is an additional placeholder for context feature and/or conditions (e.g., whether patients are sufficiently informed about the prospects and type of expected therapeutic effects).
+   + This is perhaps to complicated. Perhaps we better formulate these conditions/context features explicitly. We might perhaps start with a formulation such as *'Physicians should be allowed to offer, recommend and use (CAM) treatments of type X'* and later go on to reformulate the preliminary formulation by adding conditions/context features.
+-->
+
+[P - Ban of mere-placebo interventions (MPIs)]: Mere-placebo interventions (**MPIs**), that is treatments that have no specific therapeutic effects beyond a placebo effect, should neither be offered nor used by physicians.
+
+
+
+[P - Minimal requirements for the use of MPIs]: MPIs should not be offered, recommended or used by physicians (i) in the case of serious diseases if they are intended as an alternative to use existing therapies that have specific therapeutic effects, or (ii) if they have avoidable side effects, or (iii) if the overall expected therepeutic effects do not outweight their side effects.
+<!-- 
++ **Source**: Minimal requirements as formulated by schone-seifert_cam-praparate_2015, p. 249 
+   + Note that they confine the conditions to the question of recommending MPIs ("Für die ärztliche Empfehlung bloßer Placebo-Interventionen
+(BPIs) gibt es drei Standard-Minimalbedingungen").
++ This conjunction can be split up to three different principles.
++ That does not imply that patients cannot deny existing therapies with speficic therapeutic effects. ("Klinischer Schaden kann auch entstehen, wenn BPIs anstelle besserer Alternativen erfolgen. Werden diese besseren Alternativen durch einen aufgeklärten Patienten selbstbestimmt verweigert, lässt sich am Entgehen dieser Nutzenchancen nichts ändern. Allerdings sollten
+sich Ärzte unter solchen Umständen nicht zur Verabreichung von BPIs nötigen lassen." schone-seifert_cam-praparate_2015, p. 249)
+   + However, the last sentence is logically weaker than what is expressed by `non-[C - Permission of CAM]`.
+-->
+
+[T - Use of openly used MPIs]: Physicians should offer, recommend and use MPIs if they satisfy the minimal requirements and if patients are informed that they are treated by MPIs.
+<!--
++ **Source**: schone-seifert_cam-praparate_2015, p. 250
+-->
+
+[T - Deceiving use of MPIs]: MPIs should not be offered, recommended or used by physicians, if patients are not informed about their lack of specific therapeutic effects.
+<!--
++ So far, we cannot construct an argument against the main thesis by specifying X.
++ Discussed in schone-seifert_cam-praparate_2015, p. 250. They cite the more or less equivalent formulation "Physicians may use placebos for diagnosis or treatment only if the patient is informed of and agrees to its use."
+-->
+
+[P - Patient autonomy]: Patients should be empowered to make informed decisions about deciding on treatments.
+<!--
++ ToDo: Check formulation against literature.
+
+-->
+
+<A - Patient autonomy & deceiving use of MPIs>: Not informing patients about the lack of specific therapeutic effects of MPIs violates patient autonomy.
+   <+ [P - Patient autonomy]
+   +> [T - Deceiving use of MPIs]
+
+<A - Negative Effects of recommending MPIs>: The (possible) societal negative side effects of deceiving patients by using MPIs without an informed consent do not outweight the positive individual benefits. 
+   +> [T - Deceiving use of MPIs]
+<!--
+Cited (and explicated) by schone-seifert_cam-praparate_2015, p. 250--251. 
+In particular: "In the clinical setting, the use of a placebo without the patient's knowledge may undermine trust, compromise the patient physician relationship, and result in medical harm to the patient."
+-->
+
+<A - Trust in physicians and medicine in general>: If physician do not adhere the a general principle of transparency (by witholding known information), people might become distrustful of their physician and medicine in general.
+   +> <A - Negative Effects of recommending MPIs>
+
+<A - Possible harm>: Patient might be harmed, if they are not fully informed of therapies.
+
+<A - Violation of minimimal requirements>: (CAM) treatments of type X violate the minimum requiremeents of using/offering MPIs.
+   <+ [P - Minimal requirements for the use of MPIs]
+   -> [C - Permission of CAM]
+
+<A1 - Patient Autonomy>: Patients have the right to receive the treatment they want. (#pro)
+   +> [C - Permission of CAM] 
+<!-- Comments to A1
+-->
+
+<A3 - Limits of Patient Autonomy>: Patients do not have the right to a medical treatment that has no specific therapeutic effect beyond a placebo effect. (#con)
+   -> <A1 - Patient Autonomy>
+<!-- Comments to A3
+-->
+   
+<A2 - Placebo Is Not Enough>: (CAM) treatments of type X are mere-placebo interventions. (#con)
+   -> [C - Permission of CAM]
+   <+ [P - Ban of mere-placebo interventions (MPIs)]
+<!-- Comments to A2
+-->
+
+<A4 - Lack of Disproving Evidence>: There is not sufficient empirical evidence to conclude that CAM practices have no specific therapeutic effect beyond a placebo effect. (#pro)
+   -> <A2 - Placebo Is Not Enough>
+<!-- Comments to A4
+-->
+
+<!-- 
+Gibt ein weiteres Argument der ART: Placebo reicht aus.
+-->
